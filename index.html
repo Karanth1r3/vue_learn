@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <span @mouseover="changeText">Now you 2see me</span>
+            <p>{{title}}</p>
+            <p v-bind:class="styleCSS">Color: {{ styleCSS}}</p>
+            <input type="text" v-on:input="styleCSS = $event.target.value">
+        </div>
+            
+        <script src="js/main.js"></script>
+    </body>
+</html>

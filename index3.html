@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <button v-on:click="changeShow">Hide / Show</button>
+          <p v-if="show">Cloakable text</p>
+          <p v-else="show">text2</p>
+
+          <ul>
+            <li v-for="(car, i) in cars">{{i + 1}} - {{car.model}}, speed: {{car.speed}}</li>
+          </ul>
+        </div>
+            
+        <script src="js/main.js"></script>
+    </body>
+</html>
